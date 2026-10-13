@@ -31,4 +31,32 @@ keywords:
   - retrieval-augmented generation
   - hallucination
 # Add after the first tagged release: version, date-released, doi (Zenodo).
-# Add after publication: a preferred-citation block with the journal article.
+preferred-citation:
+  type: article
+  title: "IslamicGuard: A Scholar-Audited Evaluation of a Layered Guardrail for Islamic Question Answering"
+  authors:
+    - family-names: Gunawan
+      given-names: Teddy Surya
+      affiliation: "Department of Electrical and Computer Engineering, International Islamic University Malaysia"
+    - family-names: Kartiwi
+      given-names: Mira
+      affiliation: "Department of Information Systems, International Islamic University Malaysia"
+    - family-names: Lubis
+      given-names: Asmuliadi
+      affiliation: "Department of Islamic Management and Finance, Universiti Malaya"
+    - family-names: Mohd Balwi
+      given-names: Mohd Abd Wahab Fatoni
+      affiliation: "Department of Islamic Management and Finance, Universiti Malaya"
+    - family-names: Zaim
+      given-names: Muntaha Artalim
+      affiliation: "Department of Fiqh and Usul al-Fiqh, International Islamic University Malaysia"
+    - family-names: Armen
+      given-names: Rio Erismen
+      affiliation: "Fakulti Kewangan Antarabangsa Labuan, Universiti Malaysia Sabah"
+  journal: "IIUM Engineering Journal"
+  volume: "28"
+  issue: "1"
+  year: 2027
+  month: 1
+  doi: "10.31436/iiumej.v28i1.4817"
+  url: "https://doi.org/10.31436/iiumej.v28i1.4817"

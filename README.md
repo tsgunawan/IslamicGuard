@@ -4,7 +4,8 @@ Code, benchmark, run records and analysis for the paper
 
 > **IslamicGuard: A Scholar-Audited Evaluation of a Layered Guardrail for Islamic Question Answering**
 > Teddy Surya Gunawan, Mira Kartiwi, Asmuliadi Lubis, Mohd Abd Wahab Fatoni Mohd Balwi, Muntaha Artalim Zaim, Rio Erismen Armen.
-> Under review at the *IIUM Engineering Journal* (manuscript 4817), 2026.
+> *IIUM Engineering Journal*, Vol. 28, No. 1, January 2027. Page numbers pending.
+> DOI: [10.31436/iiumej.v28i1.4817](https://doi.org/10.31436/iiumej.v28i1.4817).
 
 IslamicGuard is a **research prototype**. Its outputs are **not fatwas** and must not be used as
 religious guidance. The study's main finding is that its own validation layers do not reliably
@@ -47,23 +48,75 @@ Added in the first revision (results in `results/tables/r2_*`):
 | `expert_review/` | Scholar-review protocol, rating form, blinded cards, per-card ratings |
 | `tests/` | Unit tests for the validators and the policy |
 
-## Setup
+## Installation (Linux or Windows with WSL 2)
 
-```bash
-conda env create -f environment.yml
-conda activate islamicguard
+The experiments used Python 3.11 on Windows Server 2022 with WSL 2, CUDA 13.0,
+and one NVIDIA RTX 4090 (24 GB). Use a Linux environment; on Windows, run the
+commands below inside Ubuntu on WSL 2. Saved-result analysis runs on CPU;
+fresh model generation requires an NVIDIA GPU for the documented workflow.
+
+### 1. Set up WSL on Windows
+
+In **PowerShell as Administrator**, install Ubuntu, then restart if prompted:
+
+```powershell
+wsl --install -d Ubuntu
+wsl --update
+wsl --list --verbose
 ```
 
-`requirements.txt` pins the direct dependencies. `requirements-lock.txt` is the full freeze of the
-original environment, kept as a record; it is not installable as-is.
+Confirm Ubuntu uses WSL 2. If it uses version 1, run
+`wsl --set-version Ubuntu 2`. Open Ubuntu and complete its user setup.
+Linux users can continue to step 2.
+See [Microsoft's WSL installation guide](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-Hardware used: one NVIDIA RTX 4090 (24 GB), Windows Server 2022 with WSL2, CUDA 13.0.
+For GPU generation, install an NVIDIA driver on **Windows** that supports CUDA
+in WSL, then check `nvidia-smi` inside Ubuntu. See
+[Microsoft's CUDA on WSL guide](https://learn.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl).
+
+### 2. Clone and install dependencies
+
+Install a **Linux** Conda distribution inside Ubuntu if `conda` is unavailable;
+see the [Conda installation guide](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html).
+Then run these commands in the Ubuntu/Linux terminal:
+
+```bash
+sudo apt update
+sudo apt install -y git build-essential
+mkdir -p ~/projects
+cd ~/projects
+git clone https://github.com/tsgunawan/IslamicGuard.git
+cd IslamicGuard
+conda env create -f environment.yml
+conda activate islamicguard
+python -m pip check
+```
+
+Run all subsequent commands from the repository root with this environment active.
+The environment installs the dependencies in `requirements.txt` automatically.
+`requirements-lock.txt` is an archival freeze of the original environment;
+it has dependency conflicts and must not be used as the installation requirements.
+The full environment includes generation packages even when only analyzing saved results.
+Model weights, retrieval indexes and downloaded corpora are fetched or built locally.
+
+### 3. Download data and check the validators
+
+```bash
+python scripts/download_benchmarks.py
+python scripts/build_corpus.py
+python -m pytest -q
+```
+
+The scripts populate `data/raw/` and rebuild `data/corpus/{quran,hadith,fiqh}.jsonl`.
+Internet access is required for acquisition; these files are excluded from Git.
+The recorded validator test suite contains 80 tests. Check download messages for
+failures before continuing to corpus construction.
 
 ## Reproduce the analysis (no GPU needed)
 
 The result tables and figures are regenerated from the saved records in `runs/` and `results/`.
 The validators need the retrieval corpus, which is rebuilt from its public sources first
-(about 80 MB of downloads, under a minute):
+(download size and time depend on the upstream sources and network):
 
 ```bash
 python scripts/download_benchmarks.py            # third-party datasets into data/raw/
@@ -88,8 +141,39 @@ every result table exactly (checked on 2026-09-30).
 
 ## Rerun generation (GPU)
 
-1. After the two data steps above, build the retrieval indexes: `python scripts/build_index.py`.
-2. Run a condition, for example:
+After installing dependencies and rebuilding the corpus, check GPU access and
+build the three retrieval layers with the embedding model used by B5:
+
+```bash
+nvidia-smi
+python -c "import torch; print('CUDA available:', torch.cuda.is_available())"
+python scripts/build_index.py --model qwen3-embedding-4b
+```
+
+The index builder downloads `Qwen/Qwen3-Embedding-4B` and writes indexes under
+`data/corpus/index/qwen3-embedding-4b/`. The generation scripts download their
+model weights on first use. The documented 8B workflow was run on a 24 GB GPU;
+other GPU configurations have not been established by these instructions.
+
+Start with the small sample, then run the full benchmark:
+
+```bash
+python scripts/run_islamicguard_b5.py --model Qwen/Qwen3-8B --sample data/benchmarks/t13_pipeline_sample.jsonl
+python scripts/run_islamicguard_b5.py --model Qwen/Qwen3-8B --sample data/benchmarks/t15_benchmark.jsonl
+```
+
+Each run writes a timestamped directory under `runs/` containing `responses.jsonl`,
+`guardrail_traces.jsonl`, configuration and metrics. The command accepts a JSONL
+sample file rather than an interactive chat prompt. For your own questions, supply
+one JSON object per line with `item_id`, `language` (`en` or `ar`), `query`,
+`source_dataset` and `source_category`, then pass that file using `--sample`.
+For example:
+
+```json
+{"item_id":"custom_001","language":"en","query":"What is zakat?","source_dataset":"custom","source_category":"fiqh"}
+```
+
+For a baseline comparison and the revision-2 experiments:
 
 ```bash
 python scripts/run_baseline.py --model Qwen/Qwen3-8B --condition B0 --sample data/benchmarks/t15_benchmark.jsonl
@@ -124,8 +208,31 @@ regenerated answer, abstention or escalation output was rated by scholars. See t
 
 ## Citation
 
-See `CITATION.cff`. Until the article is published, cite the repository:
-https://github.com/tsgunawan/IslamicGuard
+Gunawan, T. S., Kartiwi, M., Lubis, A., Mohd Balwi, M. A. W. F., Zaim, M. A.,
+& Armen, R. E. (2027). IslamicGuard: A Scholar-Audited Evaluation of a Layered
+Guardrail for Islamic Question Answering. *IIUM Engineering Journal, 28*(1).
+https://doi.org/10.31436/iiumej.v28i1.4817
+
+Page numbers will be added when available. The issue is January 2027.
+
+```bibtex
+@article{gunawan2027islamicguard,
+  author = {Gunawan, Teddy Surya and Kartiwi, Mira and Lubis, Asmuliadi and
+            Mohd Balwi, Mohd Abd Wahab Fatoni and Zaim, Muntaha Artalim and
+            Armen, Rio Erismen},
+  title = {{IslamicGuard}: A Scholar-Audited Evaluation of a Layered Guardrail for Islamic Question Answering},
+  journal = {IIUM Engineering Journal},
+  year = {2027},
+  volume = {28},
+  number = {1},
+  month = jan,
+  doi = {10.31436/iiumej.v28i1.4817},
+  url = {https://doi.org/10.31436/iiumej.v28i1.4817}
+}
+```
+
+[CITATION.cff](CITATION.cff) provides machine-readable software and article metadata.
+Repository: https://github.com/tsgunawan/IslamicGuard
 
 ## Upload to GitHub
 
