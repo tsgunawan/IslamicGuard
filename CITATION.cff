@@ -58,5 +58,6 @@ preferred-citation:
   issue: "1"
   year: 2027
   month: 1
+  # DOI provided in advance; it will resolve when the January 2027 issue is published.
   doi: "10.31436/iiumej.v28i1.4817"
   url: "https://doi.org/10.31436/iiumej.v28i1.4817"

@@ -6,6 +6,8 @@ Code, benchmark, run records and analysis for the paper
 > Teddy Surya Gunawan, Mira Kartiwi, Asmuliadi Lubis, Mohd Abd Wahab Fatoni Mohd Balwi, Muntaha Artalim Zaim, Rio Erismen Armen.
 > *IIUM Engineering Journal*, Vol. 28, No. 1, January 2027. Page numbers pending.
 > DOI: [10.31436/iiumej.v28i1.4817](https://doi.org/10.31436/iiumej.v28i1.4817).
+> **Publication notice:** This DOI is provided in advance and may not resolve yet.
+> It will resolve to the article when the issue is published in January 2027.
 
 IslamicGuard is a **research prototype**. Its outputs are **not fatwas** and must not be used as
 religious guidance. The study's main finding is that its own validation layers do not reliably
@@ -214,6 +216,7 @@ Guardrail for Islamic Question Answering. *IIUM Engineering Journal, 28*(1).
 https://doi.org/10.31436/iiumej.v28i1.4817
 
 Page numbers will be added when available. The issue is January 2027.
+The DOI is provided in advance and may not resolve until the issue is published in January 2027.
 
 ```bibtex
 @article{gunawan2027islamicguard,
