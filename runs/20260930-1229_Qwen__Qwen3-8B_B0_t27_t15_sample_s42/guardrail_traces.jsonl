@@ -1,0 +1,4 @@
+{"item_id": "faithqa_row0_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "islamiceval_subtaskC_C-Q01", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "hallutruthqa_islamicHallucination_104", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqh_1_madhhab", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}

@@ -1,0 +1,10 @@
+{
+  "n_items": 15,
+  "mean_latency_ms": 48792.5,
+  "min_latency_ms": 30913.8,
+  "max_latency_ms": 53734.1,
+  "mean_completion_tokens": 465.8,
+  "max_completion_tokens": 512,
+  "thinking_leaks": 0,
+  "thinking_leak_rate": 0.0
+}

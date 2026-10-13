@@ -1,0 +1,909 @@
+{
+ "truncation_subsets": {
+  "All pairs": {
+   "n": 12,
+   "diff": 0.625,
+   "lo": 0.16666666666666666,
+   "hi": 1.1458333333333333,
+   "sev": -0.388888888888889,
+   "sev_lo": -0.9097222222222223,
+   "sev_hi": 0.09027777777777772,
+   "items": [
+    "constructed_insufficient_0",
+    "islamiceval_subtaskC_C-Q02",
+    "hallutruthqa_islamicHallucination_181",
+    "hallutruthqa_islamicHallucination_104",
+    "islamiceval_subtaskC_C-Q01",
+    "fiqh_18_madhhab",
+    "faithqa_row27_en",
+    "faithqa_row15_en_benign",
+    "fiqh_19_madhhab",
+    "faithqa_row39_en_benign",
+    "faithqa_row0_en",
+    "constructed_insufficient_1"
+   ]
+  },
+  "B0 answer not capped": {
+   "n": 6,
+   "diff": 0.4583333333333333,
+   "lo": -0.041666666666666664,
+   "hi": 1.125,
+   "sev": -0.13888888888888892,
+   "sev_lo": -0.8055555555555557,
+   "sev_hi": 0.5416666666666666,
+   "items": [
+    "hallutruthqa_islamicHallucination_181",
+    "faithqa_row27_en",
+    "faithqa_row15_en_benign",
+    "fiqh_19_madhhab",
+    "faithqa_row0_en",
+    "constructed_insufficient_1"
+   ]
+  },
+  "Neither answer capped": {
+   "n": 4,
+   "diff": 0.4375,
+   "lo": -0.1875,
+   "hi": 1.5,
+   "sev": 0.0625,
+   "sev_lo": -0.9375,
+   "sev_hi": 0.875,
+   "items": [
+    "hallutruthqa_islamicHallucination_181",
+    "faithqa_row27_en",
+    "faithqa_row15_en_benign",
+    "faithqa_row0_en"
+   ]
+  },
+  "B0 answer capped": {
+   "n": 6,
+   "diff": 0.7916666666666666,
+   "lo": 0.08333333333333333,
+   "hi": 1.5416666666666667,
+   "sev": -0.638888888888889,
+   "sev_lo": -1.3614583333333332,
+   "sev_hi": -0.04166666666666674,
+   "items": [
+    "constructed_insufficient_0",
+    "islamiceval_subtaskC_C-Q02",
+    "hallutruthqa_islamicHallucination_104",
+    "islamiceval_subtaskC_C-Q01",
+    "fiqh_18_madhhab",
+    "faithqa_row39_en_benign"
+   ]
+  }
+ },
+ "prefix_8b": 41,
+ "f1_b0_prefix": [
+  [
+   "islamiceval_subtaskC_C-Q02",
+   true,
+   true
+  ],
+  [
+   "hallutruthqa_islamicHallucination_104",
+   true,
+   true
+  ],
+  [
+   "islamiceval_subtaskC_C-Q01",
+   true,
+   true
+  ],
+  [
+   "faithqa_row27_en",
+   true,
+   false
+  ],
+  [
+   "fiqh_19_madhhab",
+   true,
+   false
+  ],
+  [
+   "faithqa_row39_en_benign",
+   true,
+   true
+  ]
+ ],
+ "cap_by_stratum": {
+  "correct_quotation": [
+   2,
+   0,
+   1
+  ],
+  "misquoted_quran": [
+   6,
+   6,
+   4
+  ],
+  "fabricated_citation_risk": [
+   5,
+   3,
+   3
+  ],
+  "madhhab_sensitive": [
+   6,
+   1,
+   3
+  ],
+  "insufficient_context": [
+   3,
+   0,
+   1
+  ],
+  "benign_must_not_refuse": [
+   6,
+   2,
+   0
+  ]
+ },
+ "cap_total_b0_b1_b5": [
+  28,
+  12,
+  12
+ ],
+ "per_citation": {
+  "8B_B0": [
+   28,
+   17
+  ],
+  "8B_B0_2048": [
+   72,
+   48
+  ],
+  "8B_B5": [
+   72,
+   23
+  ],
+  "14B_B0": [
+   22,
+   14
+  ],
+  "14B_B0_2048": [
+   39,
+   31
+  ],
+  "14B_B5": [
+   47,
+   11
+  ],
+  "32B_B0": [
+   35,
+   25
+  ],
+  "32B_B0_2048": [
+   63,
+   33
+  ],
+  "32B_B5": [
+   81,
+   19
+  ]
+ },
+ "mixed": {
+  "quality|condition only": {
+   "b": 0.6249999999999972,
+   "lo": 0.11982249237301501,
+   "hi": 1.1301775076269793,
+   "p": 0.015314895828307157,
+   "n": 96,
+   "cap": null
+  },
+  "quality|adjusted for 512-token cap": {
+   "b": 0.5486531108141477,
+   "lo": 0.05262500080421745,
+   "hi": 1.0446812208240779,
+   "p": 0.030166142829188572,
+   "n": 96,
+   "cap": -0.4580813351150956
+  },
+  "severity|condition only": {
+   "b": -0.3991034901676149,
+   "lo": -0.882693709963448,
+   "hi": 0.08448672962821818,
+   "p": 0.10576090223377332,
+   "n": 90,
+   "cap": null
+  },
+  "severity|adjusted for 512-token cap": {
+   "b": -0.3142123502311154,
+   "lo": -0.7949253142176599,
+   "hi": 0.16650061375542913,
+   "p": 0.20015597823127895,
+   "n": 90,
+   "cap": 0.46727056239692594
+  },
+  "source|condition only": {
+   "b": 0.7197904808806233,
+   "lo": 0.1578012620779985,
+   "hi": 1.281779699683248,
+   "p": 0.012062748752576962,
+   "n": 85,
+   "cap": null
+  },
+  "source|adjusted for 512-token cap": {
+   "b": 0.63270522433395,
+   "lo": 0.06693711886467046,
+   "hi": 1.1984733298032295,
+   "p": 0.028390258907581036,
+   "n": 85,
+   "cap": -0.5211164796021598
+  }
+ },
+ "alignment": {
+  "Original provenance: any unverified citation": {
+   "n": 36,
+   "tp": 2,
+   "fp": 1,
+   "fn": 16,
+   "tn": 17,
+   "sens": [
+    0.031019522645612363,
+    0.3279976513017881
+   ],
+   "spec": [
+    0.7424269921812741,
+    0.990124809021697
+   ]
+  },
+  "Diagnostic faithfulness: <50% claims supported": {
+   "n": 36,
+   "tp": 17,
+   "fp": 15,
+   "fn": 1,
+   "tn": 3,
+   "sens": [
+    0.7424269921812741,
+    0.990124809021697
+   ],
+   "spec": [
+    0.05836576805861449,
+    0.3922203810391574
+   ]
+  },
+  "Original B5 action: intervention": {
+   "n": 24,
+   "tp": 6,
+   "fp": 8,
+   "fn": 3,
+   "tn": 7,
+   "sens": [
+    0.3542021355803961,
+    0.879416181613089
+   ],
+   "spec": [
+    0.24809535365737387,
+    0.698830199745016
+   ]
+  },
+  "Post-audit provenance replay, same cards": {
+   "n": 36,
+   "tp": 8,
+   "fp": 1,
+   "fn": 10,
+   "tn": 17,
+   "sens": [
+    0.2455951812700563,
+    0.6628358435795723
+   ],
+   "spec": [
+    0.7424269921812741,
+    0.990124809021697
+   ]
+  },
+  "Post-audit B5 action replay, same cards": {
+   "n": 24,
+   "tp": 8,
+   "fp": 8,
+   "fn": 1,
+   "tn": 7,
+   "sens": [
+    0.5650002944233438,
+    0.980109112361455
+   ],
+   "spec": [
+    0.24809535365737387,
+    0.698830199745016
+   ]
+  }
+ },
+ "loro": {
+  "Original provenance: any unverified citation|E1": [
+   2,
+   1,
+   18,
+   15
+  ],
+  "Original provenance: any unverified citation|E2": [
+   2,
+   1,
+   18,
+   15
+  ],
+  "Original provenance: any unverified citation|E3": [
+   2,
+   1,
+   19,
+   14
+  ],
+  "Original provenance: any unverified citation|E4": [
+   2,
+   1,
+   17,
+   16
+  ],
+  "Diagnostic faithfulness: <50% claims supported|E1": [
+   19,
+   13,
+   1,
+   3
+  ],
+  "Diagnostic faithfulness: <50% claims supported|E2": [
+   19,
+   13,
+   1,
+   3
+  ],
+  "Diagnostic faithfulness: <50% claims supported|E3": [
+   19,
+   13,
+   2,
+   2
+  ],
+  "Diagnostic faithfulness: <50% claims supported|E4": [
+   18,
+   14,
+   1,
+   3
+  ],
+  "Original B5 action: intervention|E1": [
+   6,
+   8,
+   3,
+   7
+  ],
+  "Original B5 action: intervention|E2": [
+   7,
+   7,
+   4,
+   6
+  ],
+  "Original B5 action: intervention|E3": [
+   7,
+   7,
+   5,
+   5
+  ],
+  "Original B5 action: intervention|E4": [
+   7,
+   7,
+   3,
+   7
+  ],
+  "Post-audit provenance replay, same cards|E1": [
+   8,
+   1,
+   12,
+   15
+  ],
+  "Post-audit provenance replay, same cards|E2": [
+   8,
+   1,
+   12,
+   15
+  ],
+  "Post-audit provenance replay, same cards|E3": [
+   8,
+   1,
+   13,
+   14
+  ],
+  "Post-audit provenance replay, same cards|E4": [
+   8,
+   1,
+   11,
+   16
+  ],
+  "Post-audit B5 action replay, same cards|E1": [
+   8,
+   8,
+   1,
+   7
+  ],
+  "Post-audit B5 action replay, same cards|E2": [
+   9,
+   7,
+   2,
+   6
+  ],
+  "Post-audit B5 action replay, same cards|E3": [
+   9,
+   7,
+   3,
+   5
+  ],
+  "Post-audit B5 action replay, same cards|E4": [
+   9,
+   7,
+   1,
+   7
+  ]
+ },
+ "loro_quality": [
+  [
+   "E1",
+   0.5833333333333334
+  ],
+  [
+   "E2",
+   0.6944444444444445
+  ],
+  [
+   "E3",
+   0.5833333333333334
+  ],
+  [
+   "E4",
+   0.638888888888889
+  ]
+ ],
+ "auc": {
+  "1 - supported-claim share": [
+   0.5694444444444444,
+   0.3132721059804393,
+   0.8317460317460318
+  ],
+  "1 - mean entailment probability": [
+   0.611111111111111,
+   0.3960535154500671,
+   0.8359133126934984
+  ],
+  "Misquoted-citation count (original)": [
+   0.6743827160493826,
+   0.4782608695652174,
+   0.834375
+  ],
+  "Unverified-citation count (post-audit parser)": [
+   0.7021604938271604,
+   0.5089082792207793,
+   0.8541666666666667
+  ]
+ },
+ "faith_sweep": [
+  [
+   0.1,
+   11,
+   0.3888888888888889,
+   0.7777777777777778
+  ],
+  [
+   0.2,
+   14,
+   0.5,
+   0.7222222222222222
+  ],
+  [
+   0.3,
+   20,
+   0.6111111111111112,
+   0.5
+  ],
+  [
+   0.4,
+   29,
+   0.7777777777777778,
+   0.16666666666666666
+  ],
+  [
+   0.5,
+   32,
+   0.9444444444444444,
+   0.16666666666666666
+  ],
+  [
+   0.6,
+   34,
+   1.0,
+   0.1111111111111111
+  ],
+  [
+   0.7,
+   35,
+   1.0,
+   0.05555555555555555
+  ]
+ ],
+ "policy_sweep": [
+  {
+   "a": 0.6,
+   "c": 0.1,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.13333333333333333,
+   "tp": 8,
+   "fp": 13,
+   "fn": 1,
+   "tn": 2,
+   "benign_pass": 8,
+   "benign_abstain": 15,
+   "insuff_abstain": 10
+  },
+  {
+   "a": 0.6,
+   "c": 0.3,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.26666666666666666,
+   "tp": 8,
+   "fp": 11,
+   "fn": 1,
+   "tn": 4,
+   "benign_pass": 8,
+   "benign_abstain": 15,
+   "insuff_abstain": 10
+  },
+  {
+   "a": 0.6,
+   "c": 0.5,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.26666666666666666,
+   "tp": 8,
+   "fp": 11,
+   "fn": 1,
+   "tn": 4,
+   "benign_pass": 8,
+   "benign_abstain": 15,
+   "insuff_abstain": 10
+  },
+  {
+   "a": 0.6,
+   "c": 1.01,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.26666666666666666,
+   "tp": 8,
+   "fp": 11,
+   "fn": 1,
+   "tn": 4,
+   "benign_pass": 8,
+   "benign_abstain": 15,
+   "insuff_abstain": 10
+  },
+  {
+   "a": 0.7,
+   "c": 0.1,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.26666666666666666,
+   "tp": 8,
+   "fp": 11,
+   "fn": 1,
+   "tn": 4,
+   "benign_pass": 11,
+   "benign_abstain": 10,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.7,
+   "c": 0.3,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.4,
+   "tp": 8,
+   "fp": 9,
+   "fn": 1,
+   "tn": 6,
+   "benign_pass": 11,
+   "benign_abstain": 10,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.7,
+   "c": 0.5,
+   "nli": 0.55,
+   "sens": 0.7777777777777778,
+   "spec": 0.4,
+   "tp": 7,
+   "fp": 9,
+   "fn": 2,
+   "tn": 6,
+   "benign_pass": 11,
+   "benign_abstain": 10,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.7,
+   "c": 1.01,
+   "nli": 0.55,
+   "sens": 0.7777777777777778,
+   "spec": 0.4,
+   "tp": 7,
+   "fp": 9,
+   "fn": 2,
+   "tn": 6,
+   "benign_pass": 11,
+   "benign_abstain": 10,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.8,
+   "c": 0.1,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.3333333333333333,
+   "tp": 8,
+   "fp": 10,
+   "fn": 1,
+   "tn": 5,
+   "benign_pass": 11,
+   "benign_abstain": 7,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.8,
+   "c": 0.3,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.4666666666666667,
+   "tp": 8,
+   "fp": 8,
+   "fn": 1,
+   "tn": 7,
+   "benign_pass": 11,
+   "benign_abstain": 7,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.8,
+   "c": 0.5,
+   "nli": 0.55,
+   "sens": 0.7777777777777778,
+   "spec": 0.4666666666666667,
+   "tp": 7,
+   "fp": 8,
+   "fn": 2,
+   "tn": 7,
+   "benign_pass": 11,
+   "benign_abstain": 7,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.8,
+   "c": 1.01,
+   "nli": 0.55,
+   "sens": 0.7777777777777778,
+   "spec": 0.4666666666666667,
+   "tp": 7,
+   "fp": 8,
+   "fn": 2,
+   "tn": 7,
+   "benign_pass": 11,
+   "benign_abstain": 7,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.9,
+   "c": 0.1,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.4,
+   "tp": 8,
+   "fp": 9,
+   "fn": 1,
+   "tn": 6,
+   "benign_pass": 12,
+   "benign_abstain": 5,
+   "insuff_abstain": 6
+  },
+  {
+   "a": 0.9,
+   "c": 0.3,
+   "nli": 0.55,
+   "sens": 0.8888888888888888,
+   "spec": 0.5333333333333333,
+   "tp": 8,
+   "fp": 7,
+   "fn": 1,
+   "tn": 8,
+   "benign_pass": 12,
+   "benign_abstain": 5,
+   "insuff_abstain": 6
+  },
+  {
+   "a": 0.9,
+   "c": 0.5,
+   "nli": 0.55,
+   "sens": 0.7777777777777778,
+   "spec": 0.5333333333333333,
+   "tp": 7,
+   "fp": 7,
+   "fn": 2,
+   "tn": 8,
+   "benign_pass": 12,
+   "benign_abstain": 5,
+   "insuff_abstain": 6
+  },
+  {
+   "a": 0.9,
+   "c": 1.01,
+   "nli": 0.55,
+   "sens": 0.7777777777777778,
+   "spec": 0.5333333333333333,
+   "tp": 7,
+   "fp": 7,
+   "fn": 2,
+   "tn": 8,
+   "benign_pass": 12,
+   "benign_abstain": 5,
+   "insuff_abstain": 6
+  },
+  {
+   "a": 1.01,
+   "c": 0.1,
+   "nli": 0.55,
+   "sens": 0.6666666666666666,
+   "spec": 0.6,
+   "tp": 6,
+   "fp": 6,
+   "fn": 3,
+   "tn": 9,
+   "benign_pass": 15,
+   "benign_abstain": 0,
+   "insuff_abstain": 0
+  },
+  {
+   "a": 1.01,
+   "c": 0.3,
+   "nli": 0.55,
+   "sens": 0.6666666666666666,
+   "spec": 0.7333333333333333,
+   "tp": 6,
+   "fp": 4,
+   "fn": 3,
+   "tn": 11,
+   "benign_pass": 15,
+   "benign_abstain": 0,
+   "insuff_abstain": 0
+  },
+  {
+   "a": 1.01,
+   "c": 0.5,
+   "nli": 0.55,
+   "sens": 0.5555555555555556,
+   "spec": 0.7333333333333333,
+   "tp": 5,
+   "fp": 4,
+   "fn": 4,
+   "tn": 11,
+   "benign_pass": 15,
+   "benign_abstain": 0,
+   "insuff_abstain": 0
+  },
+  {
+   "a": 1.01,
+   "c": 1.01,
+   "nli": 0.55,
+   "sens": 0.5555555555555556,
+   "spec": 0.7333333333333333,
+   "tp": 5,
+   "fp": 4,
+   "fn": 4,
+   "tn": 11,
+   "benign_pass": 15,
+   "benign_abstain": 0,
+   "insuff_abstain": 0
+  },
+  {
+   "a": 0.8,
+   "c": 0.3,
+   "nli": 0.35,
+   "sens": 0.7777777777777778,
+   "spec": 0.5333333333333333,
+   "tp": 7,
+   "fp": 7,
+   "fn": 2,
+   "tn": 8,
+   "benign_pass": 14,
+   "benign_abstain": 2,
+   "insuff_abstain": 5
+  },
+  {
+   "a": 0.8,
+   "c": 0.3,
+   "nli": 0.45,
+   "sens": 0.7777777777777778,
+   "spec": 0.5333333333333333,
+   "tp": 7,
+   "fp": 7,
+   "fn": 2,
+   "tn": 8,
+   "benign_pass": 12,
+   "benign_abstain": 4,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.8,
+   "c": 0.3,
+   "nli": 0.65,
+   "sens": 0.8888888888888888,
+   "spec": 0.4666666666666667,
+   "tp": 8,
+   "fp": 8,
+   "fn": 1,
+   "tn": 7,
+   "benign_pass": 9,
+   "benign_abstain": 10,
+   "insuff_abstain": 7
+  },
+  {
+   "a": 0.8,
+   "c": 0.3,
+   "nli": 0.75,
+   "sens": 0.8888888888888888,
+   "spec": 0.3333333333333333,
+   "tp": 8,
+   "fp": 10,
+   "fn": 1,
+   "tn": 5,
+   "benign_pass": 9,
+   "benign_abstain": 11,
+   "insuff_abstain": 7
+  }
+ ],
+ "table2": {
+  "8B": {
+   "insuff_abstain": 2,
+   "insuff_actions": {
+    "abstain": 2,
+    "escalate": 1,
+    "pass": 1,
+    "regenerate_with_evidence": 1
+   },
+   "escalated": [
+    "constructed_insufficient_1"
+   ],
+   "plural_applies": 8,
+   "plural_fail": 1,
+   "plural_applies_all41": 14,
+   "benign_pass": 2
+  },
+  "14B": {
+   "insuff_abstain": 3,
+   "insuff_actions": {
+    "abstain": 3,
+    "escalate": 1,
+    "regenerate_with_evidence": 1
+   },
+   "escalated": [
+    "constructed_insufficient_1"
+   ],
+   "plural_applies": 8,
+   "plural_fail": 2,
+   "plural_applies_all41": 14,
+   "benign_pass": 6
+  },
+  "32B": {
+   "insuff_abstain": 2,
+   "insuff_actions": {
+    "abstain": 2,
+    "escalate": 1,
+    "regenerate_with_evidence": 2
+   },
+   "escalated": [
+    "constructed_insufficient_1"
+   ],
+   "plural_applies": 8,
+   "plural_fail": 4,
+   "plural_applies_all41": 14,
+   "benign_pass": 3
+  }
+ },
+ "f1_mcnemar": {
+  "b0_only": 5,
+  "b5_only": 0,
+  "both": 1,
+  "p": 0.0625
+ }
+}

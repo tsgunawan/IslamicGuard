@@ -1,0 +1,15 @@
+{"item_id": "faithqa_MIZAN-656_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "faithqa_MIZAN-002_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "faithqa_MIZAN-002_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "faithqa_MIZAN-347467_11_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "faithqa_MIZAN-408_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "faithqa_MIZAN-656_ar", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "faithqa_MIZAN-002_ar", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqhqa_row76_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqhqa_row16_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqhqa_row50_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqhqa_row32_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqhqa_row90_en", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqhqa_row76_ar", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqhqa_row16_ar", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}
+{"item_id": "fiqhqa_row50_ar", "action": "pass_through", "guardrail_flags": [], "note": "no guardrails at B0/B1 (paper.md §10)"}

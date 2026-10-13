@@ -1,0 +1,7 @@
+{
+  "n_items": 15,
+  "derived_from_source_run": "20260920-0331_Qwen__Qwen3-8B_B5_t13sample_s42",
+  "condition": "B4",
+  "n_items_with_guardrail_flags": 6,
+  "note": "This condition's generation was NOT re-run; it reuses the source B5 run's identical retrieval+generation step (same retriever/template/seed) per paper.md \u00a710's ablation design. See scripts/derive_ablation_view_from_b5.py docstring for the full rationale and stated caveats (esp. latency numbers)."
+}

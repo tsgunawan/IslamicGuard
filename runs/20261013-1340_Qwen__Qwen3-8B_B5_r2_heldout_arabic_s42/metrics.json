@@ -1,0 +1,16 @@
+{
+  "n_items": 30,
+  "mean_generation_latency_ms": 43683.8,
+  "mean_completion_tokens": 364.6,
+  "mean_retrieved_per_item": 9.0,
+  "mean_retrieval_score": 0.5083,
+  "thinking_leaks": 0,
+  "action_distribution": {
+    "pass": 15,
+    "regenerate_with_evidence": 10,
+    "abstain": 5
+  },
+  "risk_level_distribution": {
+    "low": 30
+  }
+}

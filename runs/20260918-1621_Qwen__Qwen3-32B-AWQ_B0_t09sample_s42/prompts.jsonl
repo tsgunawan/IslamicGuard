@@ -1,0 +1,15 @@
+{"item_id": "faithqa_MIZAN-656_en", "language": "en", "query": "Which surah is known as the 'Tent of the Qur'an' (Fustat al-Qur'an)?", "system_prompt": null}
+{"item_id": "faithqa_MIZAN-002_en", "language": "en", "query": "Is ablution (wudu) required after eating sheep meat before praying in sheep pens?", "system_prompt": null}
+{"item_id": "faithqa_MIZAN-002_en", "language": "en", "query": "What was the outcome when Hamza al-Zayyat presented to the Prophet (peace be upon him) in a dream the narrations he heard from Aban ibn Abi Ayyash, and what does this indicate about the authenticity of those narrations?", "system_prompt": null}
+{"item_id": "faithqa_MIZAN-347467_11_en", "language": "en", "query": "In Islamic inheritance, how many shares do the deceased's sisters through the father receive if the estate is divided into 612 shares and all debts and bequests have been settled with the heirs' approval?", "system_prompt": null}
+{"item_id": "faithqa_MIZAN-408_en", "language": "en", "query": "What is the Islamic ruling on harboring suspicion or ill thoughts about fellow Muslims?", "system_prompt": null}
+{"item_id": "faithqa_MIZAN-656_ar", "language": "ar", "query": "ما هي السورة التي تُسمى فسطاط القرآن؟", "system_prompt": null}
+{"item_id": "faithqa_MIZAN-002_ar", "language": "ar", "query": "لماذا كان أبو هريرة يغسل يديه حتى يبلغ إبطيه في الوضوء؟", "system_prompt": null}
+{"item_id": "fiqhqa_row76_en", "language": "en", "query": "What is the ruling on voluntary fasting before making up for missed days in Ramadan?", "system_prompt": null}
+{"item_id": "fiqhqa_row16_en", "language": "en", "query": "What is the ruling on delaying the prayer beyond its prescribed time without an excuse?", "system_prompt": null}
+{"item_id": "fiqhqa_row50_en", "language": "en", "query": "What is the ruling on the grandfather's guardianship in marriage?", "system_prompt": null}
+{"item_id": "fiqhqa_row32_en", "language": "en", "query": "What is the ruling on forgetting a Sunnah of ablution? ", "system_prompt": null}
+{"item_id": "fiqhqa_row90_en", "language": "en", "query": "Is Hajj still a must for a woman without a husband or mahram?", "system_prompt": null}
+{"item_id": "fiqhqa_row76_ar", "language": "ar", "query": "هل يجوز التَّطَوُّعُ بِالصَّوْمِ قَبْل قَضَاءِ رَمَضَانَ؟", "system_prompt": null}
+{"item_id": "fiqhqa_row16_ar", "language": "ar", "query": "هل يعتبر تأخير الصلاة عن وقتها بدون عذر ذنبًا؟", "system_prompt": null}
+{"item_id": "fiqhqa_row50_ar", "language": "ar", "query": "ما هو حكم ولاية الْجَدِّ فِي النِّكَاحِ", "system_prompt": null}

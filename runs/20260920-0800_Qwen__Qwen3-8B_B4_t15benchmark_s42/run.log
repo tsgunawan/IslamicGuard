@@ -1,0 +1,6 @@
+run_id=20260920-0800_Qwen__Qwen3-8B_B4_t15benchmark_s42
+model=Qwen/Qwen3-8B
+condition=B4
+derived_from_source_run=20260920-0732_Qwen__Qwen3-8B_B5_t15benchmark_s42
+n_items=41
+n_items_with_guardrail_flags=22

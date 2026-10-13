@@ -1,0 +1,72 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# --- Conda / environment artifacts (recorded, not versioned as env dirs) ---
+# environment.yml and requirements-lock.txt ARE tracked; actual env dirs are not.
+
+# --- Hugging Face / model weights / caches ---
+hf-cache/
+**/hf-cache/
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.ckpt
+models/weights/
+.cache/huggingface/
+
+# --- Secrets ---
+.env
+.env.*
+*.key
+*credentials*
+
+# --- Copyrighted / access-restricted reference PDFs ---
+# Kept locally for research use; not pushed to remote unless license/rights confirmed.
+ref/*.pdf
+
+# --- Data / large artifacts (raw corpora, benchmark downloads) ---
+# Third-party dataset content itself is kept locally only (mirrors ref/*.pdf policy below) --
+# but dataset cards, hashes, and pending-access logs ARE tracked for reproducibility/audit.
+data/raw/*
+!data/raw/*.md
+!data/raw/MANIFEST.sha256
+!data/raw/PENDING_DATASETS.md
+!data/raw/*/
+data/raw/*/*
+!data/raw/*/DATASET_CARD.md
+!data/raw/*/MANIFEST.sha256
+data/corpus/*.parquet
+data/corpus/*.jsonl
+data/corpus/index/
+
+# --- Experiment outputs (large, run-specific; keep configs/metrics, not raw weights) ---
+runs/*/nvidia-smi.txt
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Scholar-review blinding keys (keep separately from shareable blinded cards) ---
+# The blinding key was withheld from raters during the study; ratings are now frozen and the key
+# is needed to reproduce the analysis, so it is tracked. It contains no personal data.
+expert_review/incoming/*
+!expert_review/incoming/.gitkeep
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- pytest / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/

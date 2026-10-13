@@ -1,0 +1,13 @@
+run_id: 20260918-1710_Qwen__Qwen3-32B-AWQ_B2_t09sample_s42
+model: Qwen/Qwen3-32B-AWQ
+condition: B2
+backend: transformers
+embedding_model: qwen3-embedding-4b
+k_per_layer: 3
+dataset: data/benchmarks/t09_pipeline_sample.jsonl
+n_items: 15
+seed: 42
+generation_config:
+  max_new_tokens: 512
+  do_sample: False
+  enable_thinking: False

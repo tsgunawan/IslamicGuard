@@ -1,0 +1,4 @@
+{"item_id": "faithqa_row0_en", "language": "en", "query": "Which prophet survived after being swallowed by a whale?", "system_prompt": null}
+{"item_id": "islamiceval_subtaskC_C-Q01", "language": "ar", "query": "ما هي وصايا لقمان لابنه؟", "system_prompt": null}
+{"item_id": "hallutruthqa_islamicHallucination_104", "language": "ar", "query": "ما الآية التي نزلت حين وعد النبيُّ ﷺ أصحابه بفتح فارس والروم، فقال المنافقون: هيهات؟", "system_prompt": null}
+{"item_id": "fiqh_1_madhhab", "language": "en", "query": "What is the ruling of Qabd (placing the right hand over the left) in prayer?", "system_prompt": null}

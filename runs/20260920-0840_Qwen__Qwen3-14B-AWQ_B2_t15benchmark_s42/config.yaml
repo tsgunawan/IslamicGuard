@@ -1,0 +1,8 @@
+run_id: 20260920-0840_Qwen__Qwen3-14B-AWQ_B2_t15benchmark_s42
+model: Qwen/Qwen3-14B-AWQ
+condition: B2
+backend: transformers
+derived_from_source_run: 20260920-0825_Qwen__Qwen3-14B-AWQ_B5_t15benchmark_s42
+derivation_method: reslice_of_b5_guardrail_traces (see script docstring)
+n_items: 41
+seed: 42

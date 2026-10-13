@@ -1,0 +1,61 @@
+{"protocol": "Reference-level labels for held-out answers (revision 2). A reference is a Qur'an verse given by surah (name or number) and verse number, or a hadith given by one of the six collections and a number, in Arabic or English form. Verse ranges are labelled by their first verse. Duplicates within an answer count once. Name-only mentions (collection or surah without a number used as a source) are counted in name_only and are not parser targets. Labelled by the coding agent from the full answer text before parser output was inspected; author spot-check pending.", "labeller": "coding agent, 2026-10-13"}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_708", "refs": [], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_751", "refs": [], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_658", "refs": [["quran", 5, 90], ["quran", 4, 43], ["hadith", "muslim", 5581], ["hadith", "abudawud", 3672], ["hadith", "muslim", 3672]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_734", "refs": [["quran", 9, 34], ["quran", 63, 9]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_712", "refs": [["quran", 73, 8], ["quran", 66, 8]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_726", "refs": [["hadith", "tirmidhi", 2636], ["hadith", "muslim", 303]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_750", "refs": [], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_739", "refs": [["quran", 3, 169], ["hadith", "ibnmajah", 2801], ["hadith", "tirmidhi", 3011]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_730", "refs": [["quran", 2, 190], ["quran", 2, 194]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_672", "refs": [["quran", 19, 29], ["quran", 24, 59]], "name_only": 1}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_721", "refs": [["quran", 2, 286], ["quran", 42, 15], ["hadith", "tirmidhi", 3571], ["hadith", "tirmidhi", 3371], ["hadith", "nasai", 2567]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_736", "refs": [["quran", 9, 102], ["quran", 25, 70], ["hadith", "muslim", 6986], ["hadith", "bukhari", 6810], ["hadith", "nasai", 4871]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_732", "refs": [["quran", 42, 20], ["quran", 5, 119], ["quran", 47, 12], ["hadith", "bukhari", 7519], ["hadith", "bukhari", 2348]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_737", "refs": [], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_743", "refs": [["hadith", "bukhari", 1203], ["hadith", "abudawud", 939], ["hadith", "ibnmajah", 1035], ["quran", 49, 2], ["quran", 33, 53]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_257", "refs": [["quran", 67, 1]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_26", "refs": [["quran", 33, 40]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_301", "refs": [["hadith", "ibnmajah", 2094]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_724", "refs": [["quran", 2, 65]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_41", "refs": [["quran", 33, 40], ["quran", 19, 30], ["hadith", "muslim", 6108]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_641", "refs": [["quran", 56, 77]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_203", "refs": [["quran", 66, 10]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_209", "refs": [["hadith", "abudawud", 2981], ["hadith", "bukhari", 3491]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_373", "refs": [["quran", 2, 102], ["quran", 7, 172]], "name_only": 1}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_375", "refs": [["quran", 56, 28], ["quran", 53, 14], ["quran", 53, 16]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_678", "refs": [["quran", 2, 252]], "name_only": 1}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_374", "refs": [["quran", 72, 3]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_324", "refs": [], "name_only": 2}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_133", "refs": [["quran", 24, 31]], "name_only": 0}
+{"run": "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_194", "refs": [], "name_only": 1}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_708", "refs": [["quran", 3, 135], ["quran", 28, 16]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_751", "refs": [], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_658", "refs": [["quran", 5, 90]], "name_only": 1}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_734", "refs": [["quran", 5, 90], ["hadith", "nasai", 5103], ["quran", 63, 9]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_712", "refs": [["quran", 73, 8]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_726", "refs": [["quran", 4, 111], ["quran", 2, 85], ["hadith", "ibnmajah", 2672], ["hadith", "tirmidhi", 2636]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_750", "refs": [], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_739", "refs": [["quran", 3, 169]], "name_only": 1}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_730", "refs": [["quran", 2, 190], ["quran", 2, 194]], "name_only": 2}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_672", "refs": [["hadith", "ibnmajah", 3665], ["hadith", "bukhari", 6002], ["hadith", "muslim", 5619]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_721", "refs": [["quran", 2, 286], ["hadith", "tirmidhi", 3571], ["hadith", "tirmidhi", 3371]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_736", "refs": [["quran", 9, 102], ["quran", 3, 135]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_732", "refs": [["quran", 47, 12], ["quran", 5, 119]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_737", "refs": [], "name_only": 2}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "qhqa25_test_743", "refs": [["hadith", "abudawud", 939], ["hadith", "ibnmajah", 1035]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_257", "refs": [], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_26", "refs": [], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_301", "refs": [], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_724", "refs": [["quran", 2, 65]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_41", "refs": [["quran", 19, 30], ["quran", 33, 40], ["hadith", "ibnmajah", 3736]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_641", "refs": [], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_203", "refs": [["quran", 66, 10]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_209", "refs": [["hadith", "bukhari", 3512], ["hadith", "bukhari", 3491]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_373", "refs": [["quran", 2, 102]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_375", "refs": [["quran", 56, 28], ["quran", 53, 14]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_678", "refs": [["hadith", "bukhari", 3317], ["hadith", "bukhari", 4934], ["hadith", "bukhari", 1830], ["quran", 77, 5]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_374", "refs": [["quran", 72, 3]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_324", "refs": [], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_133", "refs": [["quran", 33, 59]], "name_only": 0}
+{"run": "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42", "item_id": "hallutruthqa_islamicHallucination_194", "refs": [["quran", 24, 35]], "name_only": 0}

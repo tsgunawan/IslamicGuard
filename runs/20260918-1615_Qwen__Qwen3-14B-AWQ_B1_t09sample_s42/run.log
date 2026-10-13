@@ -1,0 +1,6 @@
+run_id=20260918-1615_Qwen__Qwen3-14B-AWQ_B1_t09sample_s42
+model=Qwen/Qwen3-14B-AWQ
+condition=B1
+n_items=15
+thinking_leaks=0
+mean_latency_ms=21699.4

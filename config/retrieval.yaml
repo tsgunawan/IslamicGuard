@@ -1,0 +1,53 @@
+# Retrieval configuration (T08). See DECISIONS.md DG-4 (reopened/revised same day) for the
+# full rationale.
+#
+# DG-4 REVISED (Option C): Qwen3-Embedding-4B is now PRIMARY. T08's own head-to-head evaluation
+# on this project's corpus/query set (results/tables/t08_retrieval_eval.md) found it beats
+# multilingual-e5-large-instruct decisively on every metric, every evaluated layer (overall
+# Recall@1 0.683 vs 0.433; overall MRR@10 0.714 vs 0.478; fiqh Recall@1 0.917 vs 0.583).
+#
+# THIS IS PROVISIONAL, not final: the eval set has 0 hadith pairs (citation-numbering mismatch
+# between IslamicFaithQA and fawazahmed0/hadith-api made gold-linking unreliable, so hadith-layer
+# retrieval quality is UNTESTED for either model) and is fiqh-heavy (240/328 pairs). Once a
+# reliable hadith-layer retrieval eval set exists (T14+), re-run the comparison including hadith
+# and confirm this still holds before treating it as final. mE5-large-instruct's index/build path
+# must remain available as a fallback/comparison baseline, not deleted, pending that recheck.
+
+primary_embedding_model: qwen3-embedding-4b
+comparison_embedding_models:
+  - me5-large-instruct  # former primary; kept available pending the T14+ hadith-layer recheck
+  - qwen3-embedding-0.6b  # literature-benchmarked size (eltanbouly2026); useful lower-cost reference
+
+embedding_models:
+  me5-large-instruct:
+    hf_repo: intfloat/multilingual-e5-large-instruct
+    license: MIT
+    max_seq_length: 512
+    query_instruction_style: "Instruct: {task}\nQuery: {query}"
+  qwen3-embedding-4b:
+    hf_repo: Qwen/Qwen3-Embedding-4B
+    license: Apache-2.0
+    max_seq_length: 32768
+    query_instruction_style: "Instruct: {task}\nQuery: {query}"
+  qwen3-embedding-0.6b:
+    hf_repo: Qwen/Qwen3-Embedding-0.6B
+    license: Apache-2.0
+    max_seq_length: 32768
+    query_instruction_style: "Instruct: {task}\nQuery: {query}"
+
+retrieval_instruction: >
+  Given a question about Islamic religious knowledge (Qur'an, Hadith, or fiqh),
+  retrieve the passage that best answers or supports it.
+
+index:
+  type: flat_ip  # faiss.IndexFlatIP over pre-normalized embeddings == cosine similarity
+  corpus_layers: [quran, hadith, fiqh]
+
+corpus_text_fields:
+  # What gets embedded per layer -- see src/rag/corpus.py for the exact concatenation logic.
+  quran: text_ar
+  hadith: [text_ar, text_en]
+  fiqh: [statement_ar, statement_en, question_en]
+
+normalization: none  # embeddings are computed on raw text_ar/text_en, not the *_normalized fields
+                      # (those are reserved for exact/fuzzy string matching in T11, not embedding)

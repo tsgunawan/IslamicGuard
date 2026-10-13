@@ -1,0 +1,46 @@
+{
+ "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42|original": {
+  "answers": 30,
+  "with_ref": 24,
+  "refs": 57,
+  "quran": 35,
+  "names": 6,
+  "found": 28,
+  "tp": 28,
+  "fp": 2,
+  "ans_checked": 11
+ },
+ "20261013-1340_Qwen__Qwen3-8B_B5_r2_heldout_arabic_s42|repaired": {
+  "answers": 30,
+  "with_ref": 24,
+  "refs": 57,
+  "quran": 35,
+  "names": 6,
+  "found": 50,
+  "tp": 50,
+  "fp": 2,
+  "ans_checked": 23
+ },
+ "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42|original": {
+  "answers": 30,
+  "with_ref": 22,
+  "refs": 43,
+  "quran": 27,
+  "names": 6,
+  "found": 4,
+  "tp": 4,
+  "fp": 1,
+  "ans_checked": 3
+ },
+ "20261013-1405_Qwen__Qwen3-14B-AWQ_B5_r2_heldout_arabic_s42|repaired": {
+  "answers": 30,
+  "with_ref": 22,
+  "refs": 43,
+  "quran": 27,
+  "names": 6,
+  "found": 36,
+  "tp": 36,
+  "fp": 1,
+  "ans_checked": 19
+ }
+}

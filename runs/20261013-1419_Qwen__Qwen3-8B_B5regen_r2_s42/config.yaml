@@ -1,0 +1,17 @@
+model: Qwen/Qwen3-8B
+source_run: 20260920-0732_Qwen__Qwen3-8B_B5_t15benchmark_s42
+seed: 42
+max_new_tokens: 512
+items: 13
+feedback_template: |
+  
+  
+  Your previous answer was:
+  <<<
+  {prev}
+  >>>
+  
+  An automated check found these problems with it:
+  {issues}
+  
+  Write a corrected answer to the same question. Quote Qur'an or hadith text only when it appears in the retrieved passages above, and cite it with the label exactly as given. If the passages do not support a statement, say that you are unsure rather than asserting it. Where the schools of law differ, name the schools and their positions.

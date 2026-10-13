@@ -1,0 +1,7 @@
+{
+  "model_id": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "load_seconds": 18.185980558395386,
+  "embedding_model": "qwen3-embedding-4b",
+  "embedding_hf_repo": "Qwen/Qwen3-Embedding-4B"
+}
