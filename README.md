@@ -236,7 +236,3 @@ The DOI is provided in advance and may not resolve until the issue is published 
 
 [CITATION.cff](CITATION.cff) provides machine-readable software and article metadata.
 Repository: https://github.com/tsgunawan/IslamicGuard
-
-## Upload to GitHub
-
-See [GITHUB_UPLOAD.md](GITHUB_UPLOAD.md) for the initial upload and tagged release steps.
