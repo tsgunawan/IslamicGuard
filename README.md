@@ -52,7 +52,6 @@ Added in the first revision (results in `results/tables/r2_*`):
 ```bash
 conda env create -f environment.yml
 conda activate islamicguard
-python -m pytest -q            # 80 tests
 ```
 
 `requirements.txt` pins the direct dependencies. `requirements-lock.txt` is the full freeze of the
@@ -110,7 +109,9 @@ AWQ-quantised 14B and 32B models (see `results/tables/t27_independent_rerun.md`)
 
 ## Data and licences
 
-Code is released under the MIT licence (`LICENSE`); the project's own data under CC BY 4.0.
+Original code, prompts and documentation use [MIT](LICENSE); original research data use
+[CC BY 4.0](LICENSE-DATA.md). Bundled license texts and source attributions are in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 Third-party data keep their own licences; see `DATA_LICENSES.md`. In particular, six benchmark items come from HalluTruthQA-4K
 (CC BY-NC-ND 4.0) and may be used only non-commercially and without modification.
 
@@ -125,3 +126,7 @@ regenerated answer, abstention or escalation output was rated by scholars. See t
 
 See `CITATION.cff`. Until the article is published, cite the repository:
 https://github.com/tsgunawan/IslamicGuard
+
+## Upload to GitHub
+
+See [GITHUB_UPLOAD.md](GITHUB_UPLOAD.md) for the initial upload and tagged release steps.

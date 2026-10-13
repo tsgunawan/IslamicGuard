@@ -70,3 +70,11 @@ expert_review/incoming/*
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Local authentication and private-key files
+*.pem
+*.p12
+*.pfx
+.netrc
+.aws/
+.ssh/

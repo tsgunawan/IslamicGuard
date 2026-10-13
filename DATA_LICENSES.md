@@ -1,9 +1,10 @@
 # Third-party data and licences
 
-The MIT licence in `LICENSE` covers the code written for this project. The project's own data (the
+The MIT licence in `LICENSE` covers original code, prompts and documentation written for this project. The project's own data (the
 constructed benchmark and prompt-injection items, the scholar ratings and comments, the run outputs,
 and the generated tables and figures) is released under the **Creative Commons Attribution 4.0
-International licence (CC BY 4.0)**, https://creativecommons.org/licenses/by/4.0/. Neither licence
+International licence (CC BY 4.0)**, https://creativecommons.org/licenses/by/4.0/. The grant and scope are recorded in `LICENSE-DATA.md`; full texts and attribution notices
+are bundled in `LICENSES/` and `THIRD_PARTY_NOTICES.md`. Neither licence
 covers the third-party material below. Licences are as recorded in each `data/raw/*/DATASET_CARD.md` at download time;
 check the source before reuse. This file is a record, not legal advice.
 
